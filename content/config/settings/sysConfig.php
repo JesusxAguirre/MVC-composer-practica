@@ -40,7 +40,35 @@ class sysConfig{
     return _CONTROLLER_;
   }
 
-  protected function get_
+  protected function get_index_file_(){
+    return _INDEX_FILE_;
+  }
+  protected function get_theme_(){
+    return _THEME_;
+  }
 
-  
+  protected function get_model_(){
+    return _MODEL_;
+  }
+
+  protected function get_db_server_(){
+    return _DB_SERVER_;
+  }
+
+  protected function get_db_name_(){
+    return _DB_NAME_;
+  }
+
+  protected function get_db_pass_(){
+    return _DB_PASS_;
+  }
+
+  protected function get_author_(){
+    return _AUTHOR_;
+  }
+
+  protected function get_author_git_(){
+    return 
+    _AUTHOR_GIT_;
+  }
 }
