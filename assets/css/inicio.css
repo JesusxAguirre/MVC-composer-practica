@@ -1,0 +1,12 @@
+a{
+  color: #24292d;
+  text-decoration: none;
+}
+
+a:hover{
+  color: blue;
+}
+
+a:active{
+  color: blue;
+}
