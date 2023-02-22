@@ -22,34 +22,34 @@ class frontController extends sysConfig
       $this->route = $objeto_sys->get_route_();
       $this->validar_url();
     } else {
-      die("<script>location='?url=error'</script>");
+      die("<script>location='?url=home'</script>");
     }
   }
 
 
   private function validar_url()
   {
-    $url = preg_match_all("/^[a-zA-Z0-9-@\/.=:_#$ ]{1,700}$/", $this->url);
+    $respuesta = preg_match_all("/^[a-zA-Z0-9-@\/.=:_#$ ]{1,700}$/", $this->url);
 
-    if ($url == 1) {
-      $this->redirigir_url($url);
+    if ($respuesta == 1) {
+      $this->redirigir_url();
     } else {
       die("la url ingresada es invalida");
     }
   }
 
 
-  private function redirigir_url($url)
+  private function redirigir_url()
   {
-    if (file_exists($this->controller . $url . $this->route)) {
-      require_once($this->controller . $url . $this->route);
+    if (file_exists($this->controller . $this->url . $this->route)) {
+      require_once($this->controller . $this->url . $this->route);
     } else {
-      $url = "home";
-				if(file_exists($this->controller.$url.$this->route)){
-					die("<script>location='?url=home'</script>");
-				}else{
-					die("<script>location='?url=error'</script>");
-				}
+      $this->url = "home";
+      if (file_exists($this->controller . $this->url . $this->route)) {
+        die("<script>location='?url=home'</script>");
+      } else {
+        die("<script>location='?url=error'</script>");
+      }
     }
   }
 }
