@@ -8,7 +8,7 @@ if (file_exists("vendor/autoload/php")) {
     require_once("content/component/error.php");
     die();
   } else {
-    echo "ERROR COMUNIQUISE CON EL EQUIPO DE MANTENIMIENTO";
+    die( "ERROR COMUNIQUISE CON EL EQUIPO DE MANTENIMIENTO");
   }
 }
 

@@ -8,7 +8,7 @@ use Directory;
 class frontController extends sysConfig
 {
   private $url;
-  private $directory;
+  private $route;
   private $controller;
   public function __construct($request)
   {
@@ -18,8 +18,8 @@ class frontController extends sysConfig
 
       //creando objeto sysconfig para extraer directorio de controller de constantes definidas
       $objeto_sys = new sysConfig();
-      $this->directory = $objeto_sys->get_directory_();
       $this->controller = $objeto_sys->get_controller_();
+      $this->route = $objeto_sys->get_route_();
       $this->validar_url();
     } else {
       die("<script>location='?url=home'</script>");
@@ -41,11 +41,11 @@ class frontController extends sysConfig
 
   private function redirigir_url()
   {
-    if (file_exists($this->directory . $this->url . $this->controller)) {
-      require_once($this->directory . $this->url . $this->controller);
+    if (file_exists($this->controller . $this->url . $this->route)) {
+      require_once($this->controller . $this->url . $this->route);
     } else {
       $this->url = "error_url";
-      require_once($this->directory . $this->url . $this->controller);
+      require_once($this->controller . $this->url . $this->route);
     }
   }
 }
