@@ -1,0 +1,21 @@
+{
+    "name": "electiva-mvc-practica/content",
+    "description": "Practica con composer MVC",
+    "type": "project",
+    "require": {
+        "php": "^8.1",
+        "twbs/bootstrap-icons": "^1.10"
+    },
+    "license": "001",
+    "autoload": {
+        "psr-4": {
+            "ElectivaMvcPractica\\Content\\": "content/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jesus Aguirre"
+        }
+    ],
+    "minimum-stability": "beta"
+}
