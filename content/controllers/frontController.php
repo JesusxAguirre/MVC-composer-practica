@@ -29,23 +29,27 @@ class frontController extends sysConfig
 
   private function validar_url()
   {
-    $respuesta = preg_match_all("/^[a-zA-Z0-9-@\/.=:_#$ ]{1,700}$/", $this->url);
+    $url = preg_match_all("/^[a-zA-Z0-9-@\/.=:_#$ ]{1,700}$/", $this->url);
 
-    if ($respuesta == 1) {
-      $this->redirigir_url();
+    if ($url == 1) {
+      $this->redirigir_url($url);
     } else {
-      die("<script>location='?url=error_url'</script>");
+      die("la url ingresada es invalida");
     }
   }
 
 
-  private function redirigir_url()
+  private function redirigir_url($url)
   {
-    if (file_exists($this->controller . $this->url . $this->route)) {
-      require_once($this->controller . $this->url . $this->route);
+    if (file_exists($this->controller . $url . $this->route)) {
+      require_once($this->controller . $url . $this->route);
     } else {
-      $this->url = "error_url";
-      require_once($this->controller . $this->url . $this->route);
+      $url = "home";
+				if(file_exists($this->controller.$url.$this->route)){
+					die("<script>location='?url=home'</script>");
+				}else{
+					die("<script>location='?url=error'</script>");
+				}
     }
   }
 }
