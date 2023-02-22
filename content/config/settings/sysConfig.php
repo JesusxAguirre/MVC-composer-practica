@@ -1,7 +1,6 @@
 <?php
 
-namespace config\settings;
-
+namespace ElectivaMvcPractica\Content\config\settings;
 
 //los define predeterminados
 define("_DIRECTORY_", "http://localhost/electiva-mvc-practica/");
@@ -21,11 +20,9 @@ define("_AUTHOR_GIT_", "https://github.com/JesusxAguirre");
 
 class sysConfig
 {
-
   public function _init()
   {
-    if (file_exists("content/controllers/frontController.php")) {
-    } else {
+    if (!file_exists("content/controllers/frontController.php")) {
       require_once("content/component/error.php");
     }
   }

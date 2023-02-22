@@ -1,6 +1,6 @@
 <?php
 
-namespace content\controllers;
+namespace ElectivaMvcPractica\Content\controllers;
 
 use config\settings\sysConfig as sysConfig;
 use Directory;
