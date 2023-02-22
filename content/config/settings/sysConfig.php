@@ -11,7 +11,7 @@ define("_INDEX_FILE_","http://localhost/electiva-mvc-practica/index.php");
 define("_THEME_","http://localhost/electiva-mvc-practica/assets/");
 define("_MODEL_","content/modelo");
 define("_DB_SERVER_","http://localhost/");
-define("_DB_WEB_","DB_PRAACTICA");
+define("_DB_WEB_","DB_PRACTICA");
 //los 4 adicionales
 define("_version_","1.0.0");
 define("_DB_PASS_","");
@@ -55,6 +55,10 @@ class sysConfig{
     return _DB_SERVER_;
   }
 
+  protected function get_db_web_(){
+    return _DB_WEB_;
+  }
+
   protected function get_db_name_(){
     return _DB_NAME_;
   }
@@ -70,5 +74,9 @@ class sysConfig{
   protected function get_author_git_(){
     return 
     _AUTHOR_GIT_;
+  }
+
+  protected function get_version_(){
+    return _version_;
   }
 }
