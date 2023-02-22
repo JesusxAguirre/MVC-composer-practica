@@ -3,7 +3,7 @@
 namespace content\controllers;
 
 use config\settings\sysConfig as sysConfig;
-
+use Directory;
 
 class frontController extends sysConfig
 {
@@ -27,14 +27,25 @@ class frontController extends sysConfig
   }
 
 
-  public function validar_url()
+  private function validar_url()
   {
     $respuesta = preg_match_all("/^[a-zA-Z0-9-@\/.=:_#$ ]{1,700}$/", $this->url);
 
     if ($respuesta == 1) {
-      //do someting
+      $this->redirigir_url();
     } else {
       die("<script>location='?url=error_url'</script>");
+    }
+  }
+
+
+  private function redirigir_url()
+  {
+    if (file_exists($this->directory . $this->url . $this->controller)) {
+      require_once($this->directory . $this->url . $this->controller);
+    } else {
+      $this->url = "not_found";
+      require_once($this->directory . $this->url . $this->controller);
     }
   }
 }
