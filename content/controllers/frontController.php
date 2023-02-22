@@ -44,7 +44,7 @@ class frontController extends sysConfig
     if (file_exists($this->directory . $this->url . $this->controller)) {
       require_once($this->directory . $this->url . $this->controller);
     } else {
-      $this->url = "not_found";
+      $this->url = "error_url";
       require_once($this->directory . $this->url . $this->controller);
     }
   }
