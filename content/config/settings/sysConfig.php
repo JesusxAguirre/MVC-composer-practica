@@ -5,7 +5,7 @@ namespace ElectivaMvcPractica\Content\config\settings;
 //los define predeterminados
 define("_DIRECTORY_", "http://localhost/electiva-mvc-practica/");
 define("_ROUTE_", "_controller.php");
-define("_CONTROLLER_", "http://localhost/electiva-mvc-practica/content/controllers/");
+define("_CONTROLLER_", "content/controllers/");
 define("_INDEX_FILE_", "http://localhost/electiva-mvc-practica/index.php");
 define("_THEME_", "http://localhost/electiva-mvc-practica/assets/");
 define("_MODEL_", "content/modelo");

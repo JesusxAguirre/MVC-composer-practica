@@ -13,7 +13,7 @@ class frontController extends sysConfig
   public function __construct($request)
   {
 
-    if (isset($request)) {
+    if (isset($request['url'])) {
       $this->url = $request['url'];
 
       //creando objeto sysconfig para extraer directorio de controller de constantes definidas
