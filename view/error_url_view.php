@@ -10,7 +10,7 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <style>
     .fondo {
-      background-image: url("assets/img/error-url.png");
+      background-image: url("assets/img/fondo.jpg");
       background-repeat: no-repeat;
       height: 100vh;
 
@@ -26,7 +26,7 @@
         <div class="row">
           <div style="background: #000000b5;padding:2vw" class="col-12 text-center text-white ">
             <!-- Image -->
-            <img src="assets/img/error404-01.svg" class="h-200px h-md-400px mb-4" alt="">
+            <img src="assets/img/error-url.png" class="h-200px h-md-400px mb-4" alt="">
             <!-- Title -->
             <h1 class="display-1 text-danger mb-0">404</h1>
             <!-- Subtitle -->
@@ -42,7 +42,13 @@
       </div>
     </section>
   </main>
-
+<script>
+  
+  function redirigir(){
+    window.location = "?url=home";
+  }
+  const myTimeout = setTimeout(redirigir,2000);
+</script>
 </body>
 
 </html>

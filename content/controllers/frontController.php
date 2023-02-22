@@ -44,12 +44,8 @@ class frontController extends sysConfig
     if (file_exists($this->controller . $this->url . $this->route)) {
       require_once($this->controller . $this->url . $this->route);
     } else {
-      $this->url = "home";
-      if (file_exists($this->controller . $this->url . $this->route)) {
-        die("<script>location='?url=home'</script>");
-      } else {
-        die("<script>location='?url=error'</script>");
+        die("<script>location='?url=error_url'</script>");
       }
     }
   }
-}
+
