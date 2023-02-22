@@ -2,7 +2,7 @@
 
 namespace ElectivaMvcPractica\Content\controllers;
 
-use config\settings\sysConfig as sysConfig;
+use ElectivaMvcPractica\Content\config\settings\sysConfig as sysConfig;
 use Directory;
 
 class frontController extends sysConfig
@@ -22,7 +22,7 @@ class frontController extends sysConfig
       $this->route = $objeto_sys->get_route_();
       $this->validar_url();
     } else {
-      die("<script>location='?url=home'</script>");
+      die("<script>location='?url=error'</script>");
     }
   }
 
