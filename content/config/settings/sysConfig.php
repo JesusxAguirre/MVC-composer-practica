@@ -1,0 +1,46 @@
+<?php
+
+namespace config\settings;
+
+
+//los define predeterminados
+define("_DIRECTORY_", "http://localhost/electiva-mvc-practica/");
+define("_ROUTE_","controller.php");
+define("_CONTROLLER_","http://localhost/electiva-mvc-practica/content/controllers/");
+define("_INDEX_FILE_","http://localhost/electiva-mvc-practica/index.php");
+define("_THEME_","http://localhost/electiva-mvc-practica/assets/");
+define("_MODEL_","content/modelo");
+define("_DB_SERVER_","http://localhost/");
+define("_DB_WEB_","DB_PRAACTICA");
+//los 4 adicionales
+define("_version_","1.0.0");
+define("_DB_PASS_","");
+define("_DB_USER_","root");
+define("_AUTHOR_","Jesus Aguirre");
+define("_AUTHOR_GIT_","https://github.com/JesusxAguirre");
+
+class sysConfig{
+
+  public function _init(){
+    if(file_exists("content/controllers/frontController.php")){
+      
+    }else{
+      require_once("content/component/error.php");
+    }
+  }
+
+  protected function get_directory_(){
+    return _DIRECTORY_;
+  }
+  protected function get_route_(){
+    return _ROUTE_;
+  }
+
+  protected function get_controller_(){
+    return _CONTROLLER_;
+  }
+
+  protected function get_
+
+  
+}

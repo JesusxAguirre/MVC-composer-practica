@@ -17,3 +17,7 @@ use config\settings\sysConfig as sysConfig;
 $global_config = new sysConfig();
 
 $global_config->_init();
+
+use content\controllers\frontController as frontController;
+
+$index_system = new frontController($_REQUEST);
