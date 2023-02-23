@@ -28,7 +28,7 @@
                       <img class="rounded-circle" src="assets/img/composer.jpg" style="width: 185px;" alt="logo">
                       <h4 class="mt-1 mb-5 pb-1">¡Bienvenido al sistema de MVC  con composer!</h4>
                     </div>
-                    <form  method="post" action="?pagina=login">
+                    <form  method="post" action="?url=home">
                       <div class="col-sm mb-4" id="grupo__nombre">
                         <div class="relative">
                           <i class="input-icon fs-5"></i>
@@ -41,7 +41,7 @@
                       </div>
 
                       <div class="text-center pt-1 mb-5 pb-1">
-                        <button name="jugar" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">¡Iniciar sesion!</button>
+                        <button name="jugar" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">¡Iniciar sesion!</button>
                         <br> <a class="text-dark mb-3" href="?url=registro">¿No tienes usuario? Registrate</a>
                       </div>
 
@@ -50,7 +50,6 @@
                     
               
                   </div>
-                  <a class="btn btn-primary btn-block fa-lg gradient-custom-2" href="?url=home"><i class="bi bi-arrow-left-circle-fill"></i></a>
                 </div>
                 <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                   <div class="text-white px-3 py-4 p-md-5 mx-md-4">

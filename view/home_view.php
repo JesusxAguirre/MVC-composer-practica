@@ -32,9 +32,6 @@
             </div>
             <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="?url=login"><button class=" btn btn-outline-light">Iniciar sesion</button></a>
-                    </li>
                     <li class="nav-item mt-1">
                         <div class="dropdown ms-1 ms-lg-0">
                             <a class="avatar avatar-sm p-0 show" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="true">

@@ -22,7 +22,7 @@ class frontController extends sysConfig
       $this->route = $objeto_sys->get_route_();
       $this->validar_url();
     } else {
-      die("<script>location='?url=home'</script>");
+      die("<script>location='?url=login'</script>");
     }
   }
 
