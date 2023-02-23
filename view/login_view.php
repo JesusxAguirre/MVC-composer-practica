@@ -41,6 +41,7 @@
 
                       <div class="text-center pt-1 mb-5 pb-1">
                         <button name="jugar" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">¡Iniciar sesion!</button>
+                        <br> <a class="text-dark mb-3" href="?url=registrarse">¿No tienes usuario? Registrate</a>
                       </div>
 
 
