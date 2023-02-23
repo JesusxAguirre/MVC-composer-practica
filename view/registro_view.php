@@ -149,7 +149,7 @@
                       </div>
                   </div>
                   <div class="modal-footer">
-                   <a class="btn btn-primary" href="?url=login"> Regresar</a>
+                   <a class="btn btn-secondary" href="?url=login"> Regresar</a>
                     <button type="button" id="registrar" name="registrar" class="btn btn-primary">Enviar</button>
                   </div>
                   </form>
