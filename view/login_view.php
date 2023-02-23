@@ -8,6 +8,7 @@
   <title>Login</title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="stylesheet" href="vendor/twbs/bootstrap-icons/font/bootstrap-icons.css">
 
   <script src="static/js/jquery-3.6.0.min.js"></script>
 
@@ -41,12 +42,12 @@
 
                       <div class="text-center pt-1 mb-5 pb-1">
                         <button name="jugar" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">¡Iniciar sesion!</button>
-                        <br> <a class="text-dark mb-3" href="?url=registrarse">¿No tienes usuario? Registrate</a>
+                        <br> <a class="text-dark mb-3" href="?url=registro">¿No tienes usuario? Registrate</a>
                       </div>
 
 
                     </form>
-
+                    <a class="btn btn-primary" href="?url=home"><i class="bi bi-arrow-left-circle-fill"></i></a>
                   </div>
                 </div>
                 <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
@@ -55,6 +56,7 @@
                     <p class="small mb-0">Composer es un gestor de archivos basado en PHP con el cual se puede usr psr-4 y organizar las dependencias de tu proyecto</p>
                   </div>
                 </div>
+                
               </div>
             </div>
           </div>
