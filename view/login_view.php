@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="static/css/bootstrap.min.css">
-  <link rel="stylesheet" href="static/css/login.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/login.css">
 
   <script src="static/js/jquery-3.6.0.min.js"></script>
 
@@ -24,21 +24,23 @@
                 <div class="col-lg-6">
                   <div class="card-body p-md-5 mx-md-4">
                     <div class="text-center">
-                      <img class="rounded-circle" src="./static/img/control1.jpg" style="width: 185px;" alt="logo">
+                      <img class="rounded-circle" src="assets/img/composer.jpg" style="width: 185px;" alt="logo">
                       <h4 class="mt-1 mb-5 pb-1">¡Bienvenido al sistema de MVC  con composer!</h4>
                     </div>
-                    <form id="formulario" method="post" action="?pagina=login">
+                    <form  method="post" action="?pagina=login">
                       <div class="col-sm mb-4" id="grupo__nombre">
                         <div class="relative">
                           <i class="input-icon fs-5"></i>
                           <label class="form-label"  for="">Usuario</label>
-                          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Jugadora 1" />
+                          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="example@gmail.com" />
+                          <label class="form-label mt-3"  for="">Clave</label>
+                          <input type="password" id="nombre" name="nombre" class="form-control" placeholder="******" />
                         </div>
                         <p class="text-danger d-none">Debes escribir al menos 4 letras sin numeros ni caracteres especiales</p>
                       </div>
 
                       <div class="text-center pt-1 mb-5 pb-1">
-                        <button name="jugar" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">¡Iniciar sesion!</button>
+                        <button name="jugar" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">¡Iniciar sesion!</button>
                       </div>
 
 
@@ -48,9 +50,8 @@
                 </div>
                 <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                   <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                    <h4 class="mb-4 text-center"> Tutorial </h4>
-                    <p class="small mb-0">Este juego se trata de pulsar 3 botones tendras un color predeterminado de jugador, jugaras contra otro usuario (debes esperar a que inicie otro usuario
-                      ). el objetivo sera pintar los 3 colores lo mas rapido posible al lograr los 3 colores mas rapido que tu oponente ganas.</p>
+                    <h4 class="mb-4 text-center"> Info </h4>
+                    <p class="small mb-0">Composer es un gestor de archivos basado en PHP con el cual se puede usr psr-4 y organizar las dependencias de tu proyecto</p>
                   </div>
                 </div>
               </div>
