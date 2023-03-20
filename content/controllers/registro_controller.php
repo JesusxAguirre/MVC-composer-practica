@@ -4,8 +4,9 @@ use ElectivaMvcPractica\Content\config\settings\sysConfig as sysConfig;
 
 $global_config = new sysConfig();
 
+if(!isset($_SESSION['token'])){
 $_SESSION['token'] = $global_config->get_token_();
-
+}
 
 if(isset($_POST['token'])){
   if(hash_equals($_SESSION['token'],$_POST['token'])){
@@ -16,7 +17,7 @@ if(isset($_POST['token'])){
     return true;
   }else{
     
-    echo json_encode(array("response"=>0));
+    echo json_encode(array("response"=>0,"token"=>$_SESSION['token']));
   
     return false;
   }

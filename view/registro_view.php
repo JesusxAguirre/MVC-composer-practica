@@ -32,13 +32,13 @@
                         <div class="row mt-2">
                           <div class="mb-3 row">
 
-                            <div id="grupo__correo" class="col-sm col-md-6 ">
+                            <div id="grupo__usuario" class="col-sm col-md-6 ">
                               <div class="relative">
-                                <label class="form-label fw-bold">Correo</label>
+                                <label class="form-label fw-bold">Usuario</label>
                                 <i class="input-icon fs-5"></i>
-                                <input id="correo" placeholder=" example@gmail.com" name="usuario" class="form-control">
+                                <input id="usuario" placeholder=" example@gmail.com" name="usuario" class="form-control">
                               </div>
-                              <p id="mensaje_correo" class="text-danger d-none">El formato de correo es ejemplo@gmail.com </p>
+                              <p id="mensaje_usuario" class="text-danger d-none">El formato de correo es ejemplo@gmail.com </p>
 
                             </div>
                             <div id="grupo__clave" class="col-sm col-md-6 ">
