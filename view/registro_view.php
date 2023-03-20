@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="assets/css/login.css">
 
   <script src="assets/js/jquery-3.6.0.min.js"></script>
-
+  <script src="assets/js/sweetalert2.js"></script>
 </head>
 
 <body class="h-100">
@@ -53,7 +53,9 @@
                           </div>
                         </div>
                       </div>
+                      <div id="respuesta">
 
+                      </div>
                       <div class="modal-footer">
                         <a class="btn btn-secondary" href="?url=login"> Regresar</a>
                         <button type="submit" id="registrar" name="registrar" class="btn btn-primary">Enviar</button>

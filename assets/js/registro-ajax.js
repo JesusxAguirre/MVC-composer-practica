@@ -47,19 +47,56 @@ $(document).ready(function () {
       campos[campo] = false;
     }
   }
-  console.log("Carga el js")
+
   $("#formulario").submit(function (e) {
     e.preventDefault()
-    console.log("entra en el submit")
-    $.ajax({
-      type: "POST",
-      url: "?url=registro",
-      data: $(this).serialize(),
-      success: function (response) {
-        var data = JSON.parse(response);
+    if (!(campos.usuario && campos.clave)) {
+      e.preventDefault();
+      Swal.fire({
+        icon: 'error',
+        title: 'Lo siento ',
+        text: 'Registra el formulario correctamente '
+      })
+    } else {
+      console.log("entra en el submit")
+      $.ajax({
+        type: "POST",
+        url: "?url=registro",
+        data: $(this).serialize(),
+        success: function (response) {
+          var data = JSON.parse(response);
+          console.log(data)
+          if (data.response == "1") {
+            document.getElementById("respuesta").innerHTML = "<div class='alert alert-success' role='alert'>" +
+              "Te has registrado correctamente te redirigemos al login para que inicies sesion" +
+              "</div>"
+          const myTimeout = setTimeout(recarga, 5000);
 
-        console.log(data)
-      }
-    });
+         
+          } else {
+            console.log("Envio malicioso de datos")
+          }
+        }
+      })
+    }
   })
+
+  function recarga() {
+    window.location = "?url=login";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 })
