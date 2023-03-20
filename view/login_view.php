@@ -27,15 +27,15 @@
                   <div class="card-body p-md-5 mx-md-4">
                     <div class="text-center">
                       <img class="rounded-circle" src="assets/img/composer.jpg" style="width: 185px;" alt="logo">
-                      <h4 class="mt-1 mb-5 pb-1">¡Bienvenido al sistema de MVC  con composer!</h4>
+                      <h4 class="mt-1 mb-5 pb-1">¡Bienvenido al sistema de MVC con composer!</h4>
                     </div>
-                    <form id="formulario"  method="post" action="?url=login">
+                    <form id="formulario" method="post" action="?url=login">
                       <div class="col-sm mb-4" id="grupo__nombre">
                         <div class="relative">
                           <i class="input-icon fs-5"></i>
-                          <label class="form-label"  for="">Usuario</label>
+                          <label class="form-label" for="">Usuario</label>
                           <input type="text" id="usuario" name="usuario" class="form-control" placeholder="example@gmail.com" />
-                          <label class="form-label mt-3"  for="">Clave</label>
+                          <label class="form-label mt-3" for="">Clave</label>
                           <input type="password" id="clave" name="clave" class="form-control" placeholder="******" />
                         </div>
                         <p class="text-danger d-none">Debes escribir al menos 4 letras sin numeros ni caracteres especiales</p>
@@ -46,10 +46,10 @@
                         <br> <a class="text-dark mb-3" href="?url=registro">¿No tienes usuario? Registrate</a>
                       </div>
 
-
+                      <input type="hidden" name="token" value="<?php echo $_SESSION['token'] ?>">
                     </form>
-                    
-              
+
+
                   </div>
                 </div>
                 <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
@@ -58,7 +58,7 @@
                     <p class="small mb-0">Composer es un gestor de archivos basado en PHP con el cual se puede usr psr-4 y organizar las dependencias de tu proyecto</p>
                   </div>
                 </div>
-                
+
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@
   </div>
 
 
-<script src="assets/js/login.js"></script>
+  <script src="assets/js/login.js"></script>
 </body>
 
 </html>

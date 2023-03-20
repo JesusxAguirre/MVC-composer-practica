@@ -1,6 +1,7 @@
 $(document).ready(function () {
  
   $("#formulario").submit(function (e) {
+      e.preventDefault();
       console.log("entra en el submit")
       $.ajax({
         type: "POST",
