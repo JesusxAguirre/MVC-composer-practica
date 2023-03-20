@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="vendor/twbs/bootstrap-icons/font/bootstrap-icons.css">
 
   <script src="static/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/sweetalert2.js"></script>
 
 </head>
 
@@ -66,6 +67,8 @@
     </section>
   </div>
 
+
+<script src="assets/js/login.js"></script>
 </body>
 
 </html>
