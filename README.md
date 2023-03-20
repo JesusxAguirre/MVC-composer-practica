@@ -1,5 +1,5 @@
 # MVC-composer-practica
- Practica de la materia electivade modelo mvc con composer
+ Practica de la materia electiva, mvc con ajax y seguridad
 
  Jesus Aguirre 276666555
 

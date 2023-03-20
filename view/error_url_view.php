@@ -31,6 +31,7 @@
             <h1 class="display-1 text-danger mb-0">404</h1>
             <!-- Subtitle -->
             <h2>URL invalidada asegurate que la url introducida es la correcta</h2>
+            <button type="submit" class="btn btn-secondary" onclick="redirigir()">PRESIONA AQUI PARA IR A LA PAGINA DE INICIO</button>
             <!-- info -->
             <p class="mb-4">Si el problema persiste comuniquese con el equipo de mantenimiento.</p>
             <!-- spinner -->
@@ -42,12 +43,10 @@
       </div>
     </section>
   </main>
-<script>
-  
-  function redirigir(){
-    window.location = "?url=login";
-  }
-  const myTimeout = setTimeout(redirigir,2000);
+  <script>
+    function redirigir() {
+        window.location= 'index.php'
+    }
 </script>
 </body>
 
