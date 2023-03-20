@@ -45,7 +45,7 @@
 <script>
   
   function redirigir(){
-    window.location = "?url=home";
+    window.location = "?url=login";
   }
   const myTimeout = setTimeout(redirigir,2000);
 </script>

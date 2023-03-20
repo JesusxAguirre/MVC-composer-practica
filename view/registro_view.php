@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/login.css">
 
-  <script src="static/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -31,7 +31,7 @@
                       <div class="container-fluid">
                         <div class="row mt-2">
                           <div class="mb-3 row">
-                            
+
                             <div id="grupo__correo" class="col-sm col-md-6 ">
                               <div class="relative">
                                 <label class="form-label fw-bold">Correo</label>
@@ -48,20 +48,20 @@
                                 <input id="clave" type="password" placeholder="******" name="clave" class="form-control">
                               </div>
                               <p class="text-danger d-none">La clave debe contener de 7 a 12 digitos </p>
-
+                              <input type="hidden" name="token" value="<?php echo $_SESSION['token'] ?>">
                             </div>
                           </div>
                         </div>
                       </div>
                   </div>
                   <div class="modal-footer">
-                   <a class="btn btn-secondary" href="?url=login"> Regresar</a>
-                    <button type="button" id="registrar" name="registrar" class="btn btn-primary">Enviar</button>
+                    <a class="btn btn-secondary" href="?url=login"> Regresar</a>
+                    <button type="submit" id="registrar" name="registrar" class="btn btn-primary">Enviar</button>
                   </div>
                   </form>
                 </div>
               </div>
-             
+
             </div>
           </div>
         </div>
@@ -70,6 +70,8 @@
   </section>
   </div>
 
+
+<script src="assets/js/registro-ajax.js"></script>
 </body>
 
 </html>
