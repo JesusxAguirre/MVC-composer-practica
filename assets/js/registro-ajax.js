@@ -9,6 +9,8 @@ $(document).ready(function(){
       data: $(this).serialize(),
       success: function (response) {
         var data = JSON.parse(response);
+
+        console.log(data)
       }
     });
   })

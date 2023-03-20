@@ -36,7 +36,7 @@
                               <div class="relative">
                                 <label class="form-label fw-bold">Correo</label>
                                 <i class="input-icon fs-5"></i>
-                                <input id="correo" placeholder=" example@gmail.com" name="correo" class="form-control">
+                                <input id="correo" placeholder=" example@gmail.com" name="usuario" class="form-control">
                               </div>
                               <p id="mensaje_correo" class="text-danger d-none">El formato de correo es ejemplo@gmail.com </p>
 
@@ -53,20 +53,20 @@
                           </div>
                         </div>
                       </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a class="btn btn-secondary" href="?url=login"> Regresar</a>
-                    <button type="submit" id="registrar" name="registrar" class="btn btn-primary">Enviar</button>
-                  </div>
 
-                  </form>
+                      <div class="modal-footer">
+                        <a class="btn btn-secondary" href="?url=login"> Regresar</a>
+                        <button type="submit" id="registrar" name="registrar" class="btn btn-primary">Enviar</button>
+                      </div>
+
+                    </form>
+                  </div>
                 </div>
-              </div>
 
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
 
     </section>
