@@ -9,9 +9,13 @@ $_SESSION['token'] = $global_config->get_token_();
 
 if(isset($_POST['token'])){
   if(hash_equals($_SESSION['token'],$_POST['token'])){
-    die("El envio del token es correcto");
+    $_SESSION['usuario']=  $_POST['usuario'];
+    $_SESSION['clave'] = password_hash($_POST['usuario'],PASSWORD_DEFAULT);
+    echo json_encode(array("response"=>1));
   }else{
-    die("El envioo del token es incorrecto y malicioso");
+    
+    echo json_encode(array("response"=>0));
+    die("envio malicioso");
   }
 }
 

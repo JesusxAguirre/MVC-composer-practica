@@ -27,7 +27,7 @@
                       <img class="rounded-circle" src="assets/img/composer.jpg" style="width: 185px;" alt="logo">
                       <h4 class="mt-1 mb-5 pb-1">¡Registrate en el sistema de composer!</h4>
                     </div>
-                    <form id="formulario" action="?url=registro_view" method="POST">
+                    <form id="formulario" action="?url=registro" method="POST">
                       <div class="container-fluid">
                         <div class="row mt-2">
                           <div class="mb-3 row">
@@ -58,6 +58,7 @@
                     <a class="btn btn-secondary" href="?url=login"> Regresar</a>
                     <button type="submit" id="registrar" name="registrar" class="btn btn-primary">Enviar</button>
                   </div>
+
                   </form>
                 </div>
               </div>
@@ -66,12 +67,13 @@
           </div>
         </div>
       </div>
-  </div>
-  </section>
+
+
+    </section>
   </div>
 
 
-<script src="assets/js/registro-ajax.js"></script>
+  <script src="assets/js/registro-ajax.js"></script>
 </body>
 
 </html>
