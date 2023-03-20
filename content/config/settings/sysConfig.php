@@ -17,6 +17,9 @@ define("_DB_PASS_", "");
 define("_DB_USER_", "root");
 define("_AUTHOR_", "Jesus Aguirre");
 define("_AUTHOR_GIT_", "https://github.com/JesusxAguirre");
+define("_TOKEN_",bin2hex(random_bytes(32)));
+
+
 
 class sysConfig
 {
@@ -89,5 +92,9 @@ class sysConfig
   protected function get_version_()
   {
     return _version_;
+  }
+
+  public function get_token_(){
+    return _TOKEN_;
   }
 }
