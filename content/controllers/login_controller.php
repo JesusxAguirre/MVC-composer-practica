@@ -11,15 +11,17 @@ if (!isset($_SESSION['token'])) {
 }
 
 if (isset($_POST['token'])) {
-
-  if ($_SESSION['usuario'] == $_POST['usuario'] && password_verify($_POST['clave'], $_SESSION['clave'])) {
-    echo json_encode(array("response" => 1));
-    return true;
+  if (hash_equals($_SESSION['token'], $_POST['token'])) {
+    if ($_SESSION['usuario'] == $_POST['usuario'] && password_verify($_POST['clave'], $_SESSION['clave'])) {
+      echo json_encode(array("response" => 1));
+      return true;
+    } else {
+      echo json_encode(array("response" => 0));
+      return false;
+    }
   } else {
-    echo json_encode(array("response" => 0));
-    return false;
+    die("acceso malicioso");
   }
 }
-
 
 require_once("view/login_view.php");

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="assets/css/login.css">
   <link rel="stylesheet" href="vendor/twbs/bootstrap-icons/font/bootstrap-icons.css">
 
-  <script src="static/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/sweetalert2.js"></script>
 
 </head>
@@ -29,20 +29,20 @@
                       <img class="rounded-circle" src="assets/img/composer.jpg" style="width: 185px;" alt="logo">
                       <h4 class="mt-1 mb-5 pb-1">¡Bienvenido al sistema de MVC  con composer!</h4>
                     </div>
-                    <form  method="post" action="?url=home">
+                    <form id="formulario"  method="post" action="?url=login">
                       <div class="col-sm mb-4" id="grupo__nombre">
                         <div class="relative">
                           <i class="input-icon fs-5"></i>
                           <label class="form-label"  for="">Usuario</label>
-                          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="example@gmail.com" />
+                          <input type="text" id="usuario" name="usuario" class="form-control" placeholder="example@gmail.com" />
                           <label class="form-label mt-3"  for="">Clave</label>
-                          <input type="password" id="nombre" name="nombre" class="form-control" placeholder="******" />
+                          <input type="password" id="clave" name="clave" class="form-control" placeholder="******" />
                         </div>
                         <p class="text-danger d-none">Debes escribir al menos 4 letras sin numeros ni caracteres especiales</p>
                       </div>
 
                       <div class="text-center pt-1 mb-5 pb-1">
-                        <button name="jugar" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">¡Iniciar sesion!</button>
+                        <button name="login" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">¡Iniciar sesion!</button>
                         <br> <a class="text-dark mb-3" href="?url=registro">¿No tienes usuario? Registrate</a>
                       </div>
 

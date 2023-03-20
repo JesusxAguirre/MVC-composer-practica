@@ -4,7 +4,7 @@ $(document).ready(function () {
       console.log("entra en el submit")
       $.ajax({
         type: "POST",
-        url: "?url=registro",
+        url: "?url=login",
         data: $(this).serialize(),
         success: function (response) {
           var data = JSON.parse(response);
